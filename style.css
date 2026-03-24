@@ -1,3 +1,15 @@
+#Nav-Container{
+  display:flex;
+  flex-direction: column;
+  
+
+}
+
+.Nav-Text{
+color: aliceblue;
+
+}
+
 #Logo {
   height: 100px;
   width: auto;
@@ -48,38 +60,20 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 300%;
+  font-size: 200%;
   background-color: rgb(125, 93, 155);
   text-shadow: 2px 2px #000000;
   border-radius: 100px;
   width: 800px;
 }
 
-#User-Review-Container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#User-Review-Box {
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-#User-Review-Sub-Box{
-display: flex;
-flex-direction: row;
-
-}
 
 
-#User-Image {
+.User-Image {
   width: 50px;
-  height: auto;
+  height: 50px;
+  object-fit: cover;
+  padding-right: 20px;
 }
 
 .Product-Imagerow {
@@ -95,8 +89,9 @@ flex-direction: row;
 }
 
 .Product-Image {
-  height: 300px;
-  width: auto;
+  height: 250px;
+  width: 400px;
+  object-fit: cover;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 15%;
@@ -121,11 +116,49 @@ flex-direction: row;
   width: 600px;
 }
 
-p {
+ul {
+  list-style-type: "\2615";
   font-size: large;
 }
 
-.Footer-Container {
+
+#User-Review-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#User-Review-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.User-Review-Sub-Box {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+
+.User-Image {
+  margin-right: 20px;
+  
+  
+}
+
+p {
+  font-size: large;
+  text-shadow: 1px 1px #000000;
+}
+
+h2{
+   text-shadow: 1px 1px #000000;
+
+}
+
+#Footer-Container {
   background-color: rgb(66, 66, 66);
   margin-top: 100px;
   height: 100px;
@@ -142,6 +175,7 @@ p {
   margin-right: 10%;
 }
 
+
 .Social-Media-Logo {
   width: 40px;
   height: auto;
@@ -155,6 +189,10 @@ p {
 .Social-Media-Links {
   margin-left: 3%;
   margin-right: 3%;
+}
+
+#E-Mail {
+  color: rgb(172, 146, 181);
 }
 
 a:hover {

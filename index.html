@@ -3,107 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Only Mugs</title>
+    <title>Bare Kopper</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <a class="Header-link" href="Test">Home</a>
-      <a class="Header-link" href="Test">About Us</a>
+      <nav>
+        <div id="Nav-Container">
+          <a class="Nav-Text" href="#Why-List-Container">Til F.A.Q</a>
+          <a class="Nav-Text" href="#User-Review-Container">Til Kundeomtaler</a>
+          <a class="Nav-Text" href="#Footer-Container"
+            >Til Kontaktinformasjon</a
+          >
+        </div>
+      </nav>
+
+      <a class="Header-link" href="Test">Hjem</a>
+      <a class="Header-link" href="Test">Om oss</a>
       <img
         id="Logo"
-        src="data:image/png;base64,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"
+        src="https://img.freepik.com/premium-vector/mug-logo-vector_939690-504.jpg?semt=ais_rp_50_assets&w=740&q=80"
         alt="Image of Logo"
       />
-      <a class="Header-link" href="Test">Mugs</a>
+      <a class="Header-link" href="Test">Kopper</a>
       <a class="Header-link" href="Test">Check-out</a>
     </header>
 
     <main>
-      <h1 class="Mugs-Header">We sell only mugs!</h1>
-      <div class="Product-Imagerow">
-        <img
-          class="Product-Image"
-          src="https://plus.unsplash.com/premium_photo-1719289799376-d3de0ca4ddbc?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHN8ZW58MHx8MHx8fDA%3D"
-          alt="Image of product"
-        />
-        <div class="Product-box">
+      <section>
+        <h1 class="Mugs-Header">Vi selger bare kopper!</h1>
+        <div class="Product-Imagerow">
           <img
             class="Product-Image"
-            src="https://plus.unsplash.com/premium_photo-1719289799376-d3de0ca4ddbc?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHN8ZW58MHx8MHx8fDA%3D"
+            src="https://cdn.sanity.io/images/8ihypsrf/production/0b3302f86f8a7e22c6eee66d5aa9f3641e0a57ae-6240x4160.jpg?w=3840&q=75&fit=clip&auto=format"
             alt="Image of product"
           />
-        </div>
-        <div class="Product-box">
-          <img
-            class="Product-Image"
-            src="https://plus.unsplash.com/premium_photo-1719289799376-d3de0ca4ddbc?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHN8ZW58MHx8MHx8fDA%3D"
-            alt="Image of product"
-          />
-        </div>
-      </div>
-
-      <div id="Mug-Link-Container">
-        <div>
-          <a id="Mug-Link-Box" href="Click here to check out our mugs"
-            >Click here to check out our mugs</a
-          >
-        </div>
-      </div>
-
-      <div id="Why-List-Container">
-        <div id="Why-List-Box">
-          <h2>Why should you use our mugs?</h2>
-          <ul>
-            <li>
-              <p>Because our mugs are the best</p>
-            </li>
-            <li><p>You wont find mugs as good as these anywhere else</p></li>
-
-            <li>
-              <p>Our mugs will literally fix every problem in your life</p>
-            </li>
-
-            <li>
-              <p>You are a mug if you dont buy one of our mugs</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="User-Review-Container">
-        <div id="User-Review-Box">
-          <h2>
-            But Why should you believe us? Take a look at these curated customer
-            reviews!
-          </h2>
-
-          <div id="User-Review-Sub-Box">
+          <div class="Product-box">
             <img
-              id="User-Image"
-              src="https://thumbs.dreamstime.com/b/wake-up-morning-man-drinking-coffee-mug-his-home-alone-weekend-to-relax-face-thinking-caffeine-277161307.jpg"
-              alt="Image of User"
+              class="Product-Image"
+              src="https://www.swell.com/cdn/shop/collections/Swell-Drink-Mugs-Collection-Banner_57f4940d-1352-4eb5-bb36-2b74b9f21180.jpg?v=1732716736&width=2048"
+              alt="Image of product"
             />
-
-            <p>I friggin love these mugs, they completely changed my life</p>
+          </div>
+          <div class="Product-box">
+            <img
+              class="Product-Image"
+              src="https://i.ytimg.com/vi/ZfGXs99JC80/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCvQWeIr-_LvkPMFntvVNdY1-Sh2w"
+              alt="Image of product"
+            />
           </div>
         </div>
-      </div>
+
+        <div id="Mug-Link-Container">
+          <div>
+            <a id="Mug-Link-Box" href="Click here to check out our mugs"
+              >Trykk her for å se alle våre kopper</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="Why-List-Container">
+          <div id="Why-List-Box">
+            <h2>Hvorfor skal du bruke våre kopper?</h2>
+            <ul>
+              <li>
+                <p>Vi har de beste koppene</p>
+              </li>
+              <li><p>Du finner ikke bedre kopper noen sted</p></li>
+
+              <li>
+                <p>
+                  Koppene våre vil bosktavelig talt fikse alle problemene i
+                  livet ditt
+                </p>
+              </li>
+
+              <li>
+                <p>You are a mug if you dont buy one of our mugs</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="User-Review-Container">
+          <div id="User-Review-Box">
+            <h2>Men hvorfor høre på oss, sjekk ut disse kundeomtalene!</h2>
+
+            <div class="User-Review-Sub-Box">
+              <img
+                class="User-Image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqFBc7dMOd60GOKxS-wER0USSd_1hHZZJ0gQ&s"
+                alt="Image of User"
+              />
+
+              <p>
+                <strong>Staysman</strong> sier: Jeg kan bekrefte at disse muggen
+                er megasvære.
+              </p>
+            </div>
+
+            <div class="User-Review-Sub-Box">
+              <img
+                class="User-Image"
+                src="https://www.shutterstock.com/shutterstock/photos/77810326/display_1500/stock-photo-portrait-of-senior-man-holding-coffee-mug-smiling-at-camera-77810326.jpg"
+                alt="Image of User"
+              />
+              <p>
+                <strong>Harold</strong> sier: Kona forlot meg men heldigvis har
+                jeg denne koppen.
+              </p>
+            </div>
+
+            <div class="User-Review-Sub-Box">
+              <img
+                class="User-Image"
+                src="https://st4.depositphotos.com/12985848/22996/i/1600/depositphotos_229960286-stock-photo-handsome-african-american-man-holding.jpg"
+                alt="Image of User"
+              />
+              <p>
+                <strong>Jones Mcgee</strong> sier: Disse koppene fikset
+                bokstavelig talt alle problemene i livet mitt.
+              </p>
+            </div>
+
+            <div class="User-Review-Sub-Box">
+              <img
+                class="User-Image"
+                src="https://cdn-main.newsner.com/wp-content/uploads/sites/16/2020/04/06071653/hellstromn.jpg"
+                alt="Image of User"
+              />
+              <p>
+                <strong>Helstrøm</strong> sier: Jeg er ikke kokken din men dette
+                er koppen min.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <div class="Footer-Container">
+      <div id="Footer-Container">
         <div class="Footer-Text">
-          <strong class="Text-Underlined">Our Adress:</strong>
-          <p>1234 Mug-Street</p>
-          <p>Mugland</p>
+          <strong class="Text-Underlined">Vår adresse:</strong>
+          <p>1234 Koppgata 29</p>
+          <p>Koppland</p>
         </div>
 
         <div class="Footer-Text">
-          <strong class="Text-Underlined">Check out our Socials:</strong>
+          <strong class="Text-Underlined">Sjekk ut våre sosiale media:</strong>
 
           <div class="Social-Media-Container">
-            <a class="Social-Media-Links" href="">
+            <a class="Social-Media-Links" href="https://www.facebook.com/">
               <img
                 class="Social-Media-Logo"
                 src="https://www.svgrepo.com/show/475647/facebook-color.svg"
@@ -111,7 +166,7 @@
               />
             </a>
 
-            <a class="Social-Media-Links" href="">
+            <a class="Social-Media-Links" href="https://www.instagram.com/">
               <img
                 class="Social-Media-Logo"
                 src="https://www.svgrepo.com/show/303154/instagram-2016-logo.svg"
@@ -119,7 +174,7 @@
               />
             </a>
 
-            <a class="Social-Media-Links" href="">
+            <a class="Social-Media-Links" href="https://www.linkedin.com/">
               <img
                 class="Social-Media-Logo"
                 src="https://www.svgrepo.com/show/448234/linkedin.svg"
@@ -130,9 +185,14 @@
         </div>
 
         <div class="Footer-Text">
-          <strong class="Text-Underlined">Contact Us:</strong>
-          <p>E-mail: OnlyMugs@Mugmail.com</p>
-          <p>Phone: 12 34 56 78</p>
+          <strong class="Text-Underlined">Kontakt oss:</strong>
+          <p>
+            E-mail:
+            <a id="E-Mail" href="Mailto:Onlymugs@Mugmail.com"
+              >Barekopper@Koppmail.com</a
+            >
+          </p>
+          <p>Telefon: 12 34 56 78</p>
         </div>
       </div>
     </footer>
